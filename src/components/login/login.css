@@ -1,0 +1,149 @@
+
+.login-page {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Stylish neutral gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .login-container {
+    width: 380px; /* A bit more spacious but still compact */
+    padding: 50px;
+    background: #ffffff; /* White background for clarity and focus */
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .login-container:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12); /* Subtle hover effect for interactivity */
+  }
+  
+  .login-form h2 {
+    color: #333; /* Darker text for stronger readability */
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* Adds a premium feel */
+    letter-spacing: 1px; /* For an elegant, polished look */
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 16px;
+    margin: 12px 0;
+    background: #f7f8fc;
+    border: 1px solid #dcdfe6;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .login-input::placeholder {
+    color: #aaa;
+  }
+  
+  .login-input:focus {
+    border-color: #1e3c72; /* Subtle focus border */
+    background: #fff; /* Clean background when focused */
+  }
+  
+  .login-btn, .google-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn {
+    background: #1e3c72; /* Rich blue with professional tone */
+    color: #ffffff;
+    border: 1px solid #1e3c72; /* Subtle border to match the button */
+  }
+  
+  .login-btn:hover {
+    background: #1b2a46; /* Darker blue on hover */
+    border-color: #1b2a46; /* Border darkens with hover */
+  }
+  
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid #dcdfe6;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .google-btn:hover {
+    background: #f5f6f9; /* Light hover effect for Google button */
+  }
+  
+  .google-btn svg {
+    margin-right: 10px;
+    color: #4285f4; /* Google brand blue */
+  }
+  
+  .error {
+    color: #e74c3c;
+    background-color: #f8d7da;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .switch-auth, .forgot-password {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .switch-auth a, .forgot-password a {
+    color: #1e3c72;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .switch-auth a:hover, .forgot-password a:hover {
+    text-decoration: underline;
+    color: #1b2a46; /* Slightly darker blue for hover effect */
+  }
+  
+  @media screen and (max-width: 480px) {
+    .login-container {
+      width: 90%;
+      padding: 40px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .login-input {
+      font-size: 15px;
+      padding: 14px;
+    }
+  
+    .login-btn, .google-btn {
+      font-size: 15px;
+      padding: 14px;
+    }
+  }

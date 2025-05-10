@@ -1,0 +1,104 @@
+body {
+    background-color: #e9f5ff; /* Light blue background for contrast */
+    font-family: 'Arial', sans-serif; /* Clean font */
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 600px; /* Maximum width for the form */
+    margin: 50px auto; /* Center the form on the page */
+    padding: 30px; /* Increased padding around the form */
+    background: #ffffff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Title Styles */
+  h2 {
+    text-align: center; /* Center the title */
+    color: #0056b3; /* Dark blue color for the title */
+    margin-bottom: 25px; /* Increased space below the title */
+    font-size: 30px; /* Larger font size for the title */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+  /* Input and Select Styles */
+  input.form-control,
+  select.form-select {
+    width: 100%; /* Full width for inputs and selects */
+    height: 50px; /* Increased height of input fields */
+    padding: 8px; /* Increased padding inside input fields */
+    font-size: 16px; /* Font size for input text */
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px; /* Rounded corners for inputs */
+    margin-bottom: 10px; /* Increased space between inputs */
+    transition: border 0.3s ease-in-out; /* Smooth transition for focus effects */
+  }
+  
+  /* Input Focus Effect */
+  input.form-control:focus,
+  select.form-select:focus {
+    border-color: #0056b3; /* Darker blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5); /* Blue shadow on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #007bff; /* Blue background for the button */
+    color: white; /* White text color */
+    font-size: 18px; /* Font size for button text */
+    padding: 14px; /* Increased padding inside the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out; /* Transition effects */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Profile Picture Uploader Styles */
+  .dp-uploader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #007bff; /* Blue for the dashed border */
+    padding: 20px; /* Increased padding for comfort */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text */
+    cursor: pointer; /* Pointer cursor */
+    margin-bottom: 20px; /* Increased space below the uploader */
+    transition: border 0.3s ease-in-out; /* Transition for hover effect */
+  }
+  
+  .dp-uploader:hover {
+    border-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .container {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    h2 {
+      font-size: 26px; /* Adjust title size for smaller screens */
+    }
+  
+    input.form-control,
+    select.form-select {
+      font-size: 15px; /* Adjust font size for smaller screens */
+    }
+  
+    .btn-primary {
+      font-size: 16px; /* Adjust button size for smaller screens */
+    }
+  }

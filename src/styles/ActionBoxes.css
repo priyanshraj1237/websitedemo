@@ -1,0 +1,114 @@
+.action-boxes-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem; /* Adjusted for smaller gaps between boxes */
+    padding: 1rem 0; /* Added padding to ensure space around the boxes */
+    border-radius: 18px;
+    overflow-x: auto; /* Allow scrolling horizontally */
+    justify-content: flex-start; /* Align to the left to prevent unnecessary space */
+    align-items: center; 
+    margin-top: 3rem;
+  /* Vertically center if needed */
+  }
+  
+  /* Scrollbar Styling */
+  .action-boxes-wrapper::-webkit-scrollbar {
+    height: 9px;
+  }
+  
+  .action-boxes-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  
+  /* Each Action Box */
+  .action-box {
+    flex: 0 0 auto; /* Prevent boxes from stretching */
+    min-width: 250px;
+    max-width: 400px;
+    background: white;
+    border: 1.5px solid #e5e7eb;
+    padding: 1rem; /* Added padding for spacing inside boxes */
+    border-radius: 19px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    outline: none;
+    margin-right: 1rem; /* Slight margin for spacing between boxes */
+  }
+  
+  /* Hover Interaction */
+  .action-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+    border-color: #f4f4f4;
+  }
+  
+  /* Focus Style (Accessibility) */
+  .action-box:focus {
+    outline: 3px solid #8d8dee;
+    outline-offset: 4px;
+  }
+  
+  /* Click/Active Effect */
+  .action-box:active {
+    transform: scale(0.98);
+  }
+  
+  /* Icon Style */
+  .action-icon {
+    font-size: 2.4rem;
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease;
+  }
+  
+  .action-box:hover .action-icon {
+    transform: scale(1.15);
+  }
+  
+  /* Headings */
+  .action-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #4f46e5;
+  }
+  
+  /* Descriptions */
+  .action-box p {
+    color: #6b7280;
+    font-size: 0.95rem;
+  }
+  
+  /* Responsive Adjustments for Smaller Screens */
+  @media (max-width: 1024px) {
+    /* Adjust gap for medium-sized screens (13.5-inch and similar devices) */
+    .action-boxes-wrapper {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      justify-content: center; /* Center align boxes */
+    }
+  
+    .action-box {
+      flex: 0 1 300px; /* Allow resizing but prevent shrinking too much */
+      max-width: 95%; /* Ensure the box doesn’t stretch beyond the screen width */
+      margin-bottom: 1.5rem; /* Space below each box */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .action-boxes-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; /* Adjust gap for mobile view */
+    }
+  
+    .action-box {
+      width: 90%; /* More space for boxes on mobile */
+      max-width: 100%;
+      margin-bottom: 1.5rem; /* Space below each box */
+    }
+  }
+  

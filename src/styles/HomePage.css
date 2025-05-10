@@ -1,0 +1,139 @@
+/* HomePage.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Dark Blue Background */
+    color: white;
+  }
+  
+  .homeScreen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 70px; /* Offset for fixed header */
+    background-color: #001f3f;
+  }
+  
+  .header-container {
+    width: 100%;
+    background-color: #00122e; /* Darker shade for the header */
+    color: white;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem;
+  }
+  
+  .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .navigation a:hover,
+  .navigation a:focus {
+    color: #80bfff; /* Light Blue on hover */
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #001f3f; /* Dark Blue Background */
+    justify-content: center;
+    flex-grow:1; 
+    text-align: center;
+    align-items: center;
+  }
+  
+  .main-heading {
+    margin: 2rem 0;
+    font-size: 3.0rem;
+    color: #80bfff;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Smooth fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .links-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .link-box {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .link-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .links-container {
+      flex-direction: column;
+    }
+  
+    .link-box {
+      width: 90%;
+      margin: 0.5rem 0;
+    }
+  
+    .main-heading {
+      font-size: 2rem;
+    }
+  }

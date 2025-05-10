@@ -1,0 +1,167 @@
+/* Section */
+
+:root {
+    --primary-color: #2563eb;
+    --accent-color: #1d4ed8;
+    --bg-color: #f9fafb;
+    --text-dark: #1f2937;
+    --text-muted: #6b7280;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --transition: 0.25s ease;
+    --card-radius: 14px;
+  }
+  
+  /* Section */
+  .trending-section {
+    width: 100%;
+    background: transparent;
+    padding: 8px 0 0 0;
+    margin: 0;
+  }
+  
+  /* Title */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 16px;
+    position: relative;
+    padding-left: 16px;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: -6px;
+    left: 16px;
+    border-radius: 2px;
+  }
+  
+  /* Filter Buttons */
+  .filter-buttons {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+  }
+  .filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    background: #fff;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all var(--transition);
+    box-shadow: var(--shadow);
+  }
+  .filter-btn .btn-icon {
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+  }
+  .filter-btn.active .btn-icon {
+    color: #fff;
+  }
+  
+  /* Card Grid */
+  .trending-grid.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+    margin: 0 8px;
+  }
+  .trending-grid.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Cards */
+  .trending-card {
+    min-width: 180px; /* Increased from 160px */
+    background: #fff;
+    border-radius: var(--card-radius);
+    padding: 18px; /* Increased from 14px */
+    text-align: left;
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: pointer;
+    flex-shrink: 0;
+    border: 1px solid #e5e7eb;
+    box-shadow: var(--shadow);
+  }
+  .trending-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  .trending-card.highlighted {
+    border: 2px solid var(--primary-color);
+  }
+  
+  /* Icon */
+  .icon-wrapper {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  
+  /* Text */
+  .card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin: 4px 0;
+    text-align: left;
+  }
+  .card-desc {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: left;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.3rem;
+    }
+    .trending-card {
+      min-width: 160px; /* Increased from 140px */
+      padding: 14px; /* Increased from 12px */
+    }
+    .icon-circle {
+      width: 34px;
+      height: 34px;
+      font-size: 0.9rem;
+    }
+    .card-title {
+      font-size: 0.9rem;
+    }
+    .card-desc {
+      font-size: 0.7rem;
+    }
+  }

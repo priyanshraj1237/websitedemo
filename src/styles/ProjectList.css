@@ -1,0 +1,190 @@
+.project-list-container {
+    padding: 3rem 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1f2937;
+    background: #f9fafb;
+  }
+  
+  /* Header */
+  .project-list-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .project-list-header h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #111827;
+  }
+  
+  .project-list-header p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+  }
+  
+  /* Add Project Form */
+  .add-project-section {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  }
+  
+  .add-project-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+  }
+  
+  .add-project-section form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .add-project-section input,
+  .add-project-section textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    transition: all 0.2s ease;
+  }
+  
+  .add-project-section input:focus,
+  .add-project-section textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px #93c5fd;
+  }
+  
+  .add-project-section button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+  
+  .add-project-section button:hover {
+    background: #1e40af;
+  }
+  
+  /* Message */
+  .bid-message {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    margin: 1.5rem auto;
+    max-width: 600px;
+    font-size: 1rem;
+  }
+  
+  .bid-message.success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #10b981;
+  }
+  
+  .bid-message.error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #f87171;
+  }
+  
+  /* Project Cards */
+  .project-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .project-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+  }
+  
+  .project-category {
+    font-size: 0.85rem;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .project-budget {
+    color: #10b981;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-skills,
+  .project-description {
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    color: #6b7280;
+    margin-top: 3rem;
+  }
+  
+  .empty-icon {
+    width: 80px;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .add-project-section form {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .apply-now-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .apply-now-btn:hover {
+    background-color: #218838;
+  }
